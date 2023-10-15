@@ -1,0 +1,232 @@
+/*start general */
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*end general */
+
+/*start variable */
+:root{
+    --main-color:#3a6cf4;
+    --second-color: #f0f0f0;
+
+
+}
+
+/*end variable */
+
+
+
+/* start header */
+
+/* end header */
+/* start main */
+header {
+    background-color: var(--second-color);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #1a636b;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../Images/bck.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: var(--second-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main >div span{
+    color: var(--main-color);
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: var(--second-color);
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+.button{
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 0.9375em 2.1875em ;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: 0.7s ease;
+
+}
+.button:hover{
+    background-color: #1a636b;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: var(--second-color);
+    font-size: 30px;
+    padding-right: 30px;
+    transition: 0.7s ease;
+}
+.social-icons i:hover{
+    transform: scale(1.25);
+    cursor: copy;
+}
+/* end main */
+/* start services */
+.title{
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 150px;
+
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.card .icon{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 60px;
+    color: var(--main-color);
+}
+.info{
+    text-align: center;
+    line-height: 30px;
+}
+.info h3{
+    margin-bottom:10px ;
+}
+#text{
+    direction: rtl;
+}
+.card p{
+    color: #777;
+}
+.card{
+    transition: 0.3s ease;
+    background-color: white;
+    box-shadow: 0 5px 25px #9c9c9c6e;
+    padding-bottom: 20px;
+    padding-right:  20px;
+    padding-left: 20px;
+}
+.card:hover{
+    transform: scale(1.052);
+}
+/* end services */
+.m .m div{
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #2f54bac4;
+    color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px #777;
+    direction: rtl;
+    line-height: 30px;
+    
+
+}
+.m span{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.contact i{
+    text-align: center;
+    font-size: 40px;
+}
+.footer{
+    background-color: #212735d1;
+    color: var(--second-color);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2 , .main h3, .social-icons{
+        text-align: center;
+    }
+    .main a{
+       align-items: center;
+    }
+    .social-icons{
+        margin-top: 10px;
+    }
+}
